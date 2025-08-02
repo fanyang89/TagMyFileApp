@@ -10,7 +10,10 @@
       "Bash(go build:*)",
       "Bash(.TagMyFileApp.exe)",
       "Bash(./TagMyFileApp.exe)",
-      "Bash(\".\\build\\bin\\TagMyFileApp.exe\")"
+      "Bash(\".\\build\\bin\\TagMyFileApp.exe\")",
+      "Bash(wails generate:*)",
+      "Bash(.buildbinTagMyFileApp.exe)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }

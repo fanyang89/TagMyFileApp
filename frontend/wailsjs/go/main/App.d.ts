@@ -4,10 +4,16 @@ import {main} from '../models';
 
 export function GetDirectoryContents(arg1:string):Promise<Array<main.FileSystemItem>>;
 
+export function GetDiskSpaceInfo():Promise<main.DiskSpaceInfo>;
+
 export function GetDrives():Promise<Array<main.FileSystemItem>>;
 
 export function GetFileSystemItem(arg1:string):Promise<main.FileSystemItem>;
 
+export function GetImageData(arg1:string):Promise<string>;
+
 export function GetRootDirectories():Promise<Array<main.FileSystemItem>>;
 
 export function Greet(arg1:string):Promise<string>;
+
+export function OpenFile(arg1:string):Promise<void>;

@@ -1,5 +1,29 @@
 export namespace main {
 	
+	export class DiskSpaceInfo {
+	    totalBytes: number;
+	    freeBytes: number;
+	    usedBytes: number;
+	    totalSpaceGB: number;
+	    freeSpaceGB: number;
+	    usedSpaceGB: number;
+	    usagePercent: number;
+	
+	    static createFrom(source: any = {}) {
+	        return new DiskSpaceInfo(source);
+	    }
+	
+	    constructor(source: any = {}) {
+	        if ('string' === typeof source) source = JSON.parse(source);
+	        this.totalBytes = source["totalBytes"];
+	        this.freeBytes = source["freeBytes"];
+	        this.usedBytes = source["usedBytes"];
+	        this.totalSpaceGB = source["totalSpaceGB"];
+	        this.freeSpaceGB = source["freeSpaceGB"];
+	        this.usedSpaceGB = source["usedSpaceGB"];
+	        this.usagePercent = source["usagePercent"];
+	    }
+	}
 	export class FileSystemItem {
 	    key: string;
 	    label: string;

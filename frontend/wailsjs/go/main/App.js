@@ -6,6 +6,10 @@ export function GetDirectoryContents(arg1) {
   return window['go']['main']['App']['GetDirectoryContents'](arg1);
 }
 
+export function GetDiskSpaceInfo() {
+  return window['go']['main']['App']['GetDiskSpaceInfo']();
+}
+
 export function GetDrives() {
   return window['go']['main']['App']['GetDrives']();
 }
@@ -14,10 +18,18 @@ export function GetFileSystemItem(arg1) {
   return window['go']['main']['App']['GetFileSystemItem'](arg1);
 }
 
+export function GetImageData(arg1) {
+  return window['go']['main']['App']['GetImageData'](arg1);
+}
+
 export function GetRootDirectories() {
   return window['go']['main']['App']['GetRootDirectories']();
 }
 
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
+}
+
+export function OpenFile(arg1) {
+  return window['go']['main']['App']['OpenFile'](arg1);
 }
