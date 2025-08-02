@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(wails build:*)",
+      "Bash(wails dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(go run:*)",
+      "Bash(go build:*)",
+      "Bash(.TagMyFileApp.exe)",
+      "Bash(./TagMyFileApp.exe)",
+      "Bash(\".\\build\\bin\\TagMyFileApp.exe\")"
+    ],
+    "deny": []
+  }
+}
